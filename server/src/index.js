@@ -19,7 +19,7 @@ db.once("open", () => console.log("MongoDB connected"));
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || "https://cookxpfrontend.onrender.com/",
+  origin: process.env.CORS_ORIGIN || "https://cookxpfrontend.onrender.com",
   credentials: true,
 }));
 
